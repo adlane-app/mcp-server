@@ -1,0 +1,38 @@
+{
+  "manifest_version": "0.3",
+  "name": "adlane",
+  "display_name": "Adlane",
+  "version": "1.0.0",
+  "description": "Connect your Adlane account to an MCP client.",
+  "long_description": "get_profile reads your own account. list_workspaces lists your own advertising workspaces. Neither tool creates campaigns, approves proposals, changes ads or budgets, or spends money.",
+  "author": {
+    "name": "Codex"
+  },
+  "homepage": "https://adlane.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adlane-app/mcp-server"
+  },
+  "icon": "icon.png",
+  "server": {
+    "type": "node",
+    "entry_point": "server/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/server/index.js"
+      ]
+    }
+  },
+  "compatibility": {
+    "platforms": [
+      "darwin",
+      "win32",
+      "linux"
+    ],
+    "runtimes": {
+      "node": ">=22"
+    }
+  },
+  "license": "MIT"
+}
