@@ -1,0 +1,6 @@
+{
+  "brand": "Adlane",
+  "endpoint": "https://mcp.adlane.app/mcp",
+  "version": "1.1.0",
+  "scope": "profile:read"
+}
