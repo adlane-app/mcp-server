@@ -1,0 +1,63 @@
+{
+  "name": "adlane-mcp",
+  "version": "1.2.1",
+  "description": "Read-only MCP connector for Adlane workspaces, Google and Meta ad accounts and campaign reports.",
+  "type": "module",
+  "bin": {
+    "adlane-mcp": "server/index.js"
+  },
+  "files": [
+    "server",
+    "icon.png",
+    "manifest.json",
+    "server.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "node --test test/*.test.mjs",
+    "bundle": "mcpb pack . adlane.mcpb"
+  },
+  "dependencies": {
+    "mcp-remote": "0.14.2"
+  },
+  "devDependencies": {
+    "@anthropic-ai/mcpb": "2.1.2"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "author": "Codex",
+  "contributors": [
+    {
+      "name": "Codex"
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://adlane.app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adlane-app/mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adlane-app/mcp-server/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "adlane",
+    "google-ads",
+    "meta-ads",
+    "campaign-reporting",
+    "paid-marketing"
+  ],
+  "mcpName": "io.github.adlane-app/mcp-server",
+  "overrides": {
+    "tmp": "^0.2.6"
+  }
+}
