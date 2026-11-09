@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.adlane-app/mcp-server",
+  "description": "Read-only MCP connector for Adlane workspaces, Google and Meta ad accounts and campaign reports.",
+  "repository": {
+    "url": "https://github.com/adlane-app/mcp-server",
+    "source": "github"
+  },
+  "version": "1.2.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "adlane-mcp",
+      "version": "1.2.1",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.adlane.app/mcp"
+    }
+  ]
+}

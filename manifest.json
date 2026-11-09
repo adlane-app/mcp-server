@@ -1,0 +1,38 @@
+{
+  "manifest_version": "0.3",
+  "name": "adlane",
+  "display_name": "Adlane",
+  "version": "1.2.1",
+  "description": "Read-only MCP connector for Adlane workspaces, Google and Meta ad accounts and campaign reports.",
+  "long_description": "Adlane is an AI workspace for paid marketing. Bring your business website, goal and target market, connect Google or Meta ad accounts, and explore the evidence behind campaign decisions in one conversation. The product brings campaign analysis, market research and proposals together so teams can review the exact action before changing a live account. get_profile and list_workspaces read your account context. list_ad_accounts, get_campaign_performance and get_campaign_details read owned connected advertising accounts. No ad or budget changes. The MCP is read-only: it cannot create campaigns, approve proposals, change ads or budgets, or spend money. Campaign creation and approved live changes belong to the Adlane application. Preserve each platform\u2019s attribution context; conversion value is not profit and overlapping conversions are not unique customers.",
+  "author": {
+    "name": "Codex"
+  },
+  "homepage": "https://adlane.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adlane-app/mcp-server"
+  },
+  "icon": "icon.png",
+  "server": {
+    "type": "node",
+    "entry_point": "server/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/server/index.js"
+      ]
+    }
+  },
+  "compatibility": {
+    "platforms": [
+      "darwin",
+      "win32",
+      "linux"
+    ],
+    "runtimes": {
+      "node": ">=22"
+    }
+  },
+  "license": "MIT"
+}
