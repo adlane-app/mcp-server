@@ -1,0 +1,38 @@
+{
+  "manifest_version": "0.3",
+  "name": "adlane",
+  "display_name": "Ad library search by Adlane",
+  "version": "2.0.0",
+  "description": "Ad library search MCP connector by Adlane: see competitor ads on Meta, TikTok, LinkedIn and Google at once, save ad creative to boards and track competitors.",
+  "long_description": "Ad library search for competitor ads: search the Meta, TikTok, LinkedIn and Google ad libraries in one call. An ad spy for ad creative research and ad intelligence. search_ads finds live and recent ads by keyword, advertiser or website domain with copy, creative, start dates, placements and landing pages; each call uses one search from your Adlane plan. get_usage shows searches left. list_boards, get_board, create_board and save_ad manage saved-ad boards. list_competitors and track_competitor follow competitors and flag their new ads. Sign in with your Adlane account in the browser; Free accounts include 5 free searches to try it, no card.",
+  "author": {
+    "name": "Codex"
+  },
+  "homepage": "https://adlane.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adlane-app/mcp-server"
+  },
+  "icon": "icon.png",
+  "server": {
+    "type": "node",
+    "entry_point": "server/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/server/index.js"
+      ]
+    }
+  },
+  "compatibility": {
+    "platforms": [
+      "darwin",
+      "win32",
+      "linux"
+    ],
+    "runtimes": {
+      "node": ">=22"
+    }
+  },
+  "license": "MIT"
+}

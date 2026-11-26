@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.adlane-app/mcp-server",
+  "title": "Ad library search by Adlane",
+  "description": "Ad library search: see competitor ads on Meta, TikTok, LinkedIn and Google; boards and tracking.",
+  "repository": {
+    "url": "https://github.com/adlane-app/mcp-server",
+    "source": "github"
+  },
+  "version": "2.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "adlane-mcp",
+      "version": "2.0.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://adlane.app/mcp"
+    }
+  ]
+}

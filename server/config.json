@@ -1,0 +1,6 @@
+{
+  "brand": "Adlane",
+  "endpoint": "https://adlane.app/mcp",
+  "version": "2.0.0",
+  "scope": "adlane"
+}
